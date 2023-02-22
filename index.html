@@ -25,21 +25,32 @@
   </head>
   <body>
     <header>
-      <img class="logo" src="images/MahouBunny_Logo.png" alt="logo">
-
-      <nav>
-        <ul class="nav_links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-                    <!--Search bar-->
-          <!--<label for="name">Name: </label>-->
-
-          <input type="text" id="search" name="nav" placeholder = "Search" autocomplete="search" required = "required" />
-          <!--<li><a href="#">Home</a></li>-->
-        </ul>
-      </nav>
+      <div class="header">
+        <div class="container">
+          <h2 class="sr-only">Site header</h2>
+          <!--banner-->
+          <div class="header--banner">
+            <!--Class image will be positioned in the middle-->
+            <img class="header--banner--img" src="images/MahouBunny_Logo.png" alt="Company logo, Mahou Bunny">
+            <!--class="header--banner--nav" is the links which will be on the left side of banner-->
+            <nav class="header--banner--nav">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <!--Right side of banner is the user sign in and basket-->
+                <div class="header--banner--user">
+                  <li><input type="text" id="search" name="nav" placeholder = "Search" autocomplete="search" required = "required" /></li>
+                  <li><a href="#"> <i class='bx bxs-user'></i> Sign In</a></li>
+                  <li><a href="#"> Register</a></li>
+                  <li><a href="#"> <i class='bx bx-shopping-bag' ></i> Basket</a></li>
+                </div>
+              </ul>
+            </nav>     
+          </div>
+        </div>
+      </div>
     </header>
     <!--
 
