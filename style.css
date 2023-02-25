@@ -4,7 +4,9 @@
 /*.grid-container{
 
 }*/
-
+html{
+  outline: none;
+}
 body{
   overflow: hidden;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,7 +20,48 @@ body{
   top: 0;
   left: 0;
   right: 0;
-  background: #fff;
+  background: #fe2626;
+
+  /*Flex directives */
+  position: fixed;
+  padding: 30px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  
+  box-shadow:0 .5rem 1 rem rgba(0,0,0,0.2);
+}
+
+.header--banner--logo{
+  cursor: pointer;
+}
+
+.header--banner--navBar ul{
+  /*display: flex;
+  gap: 100 px;
+  justify-content: space-between;
+
+  list-style-type: none;
+  margin: 0px;
+  padding: 0 px;*/
+  list-style: none;
+}
+
+.header--banner--navBar ul li {
+  display: inline-block;
+  padding: 0px 100 px;
+}
+.header--banner--navBar ul li a{
+  /*font-size: 2 rem;*/
+  transition: all 0.3s ease 0s;
+  
+  color: #fff;
+  text-decoration: none;
+
+} 
+.header--banner--navBar ul li a :hover{
+  color: #372948;
 }
 /****** Container *******/
 /*.container {
