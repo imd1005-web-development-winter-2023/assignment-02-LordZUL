@@ -277,6 +277,8 @@ body{
   /****** Categories *******/
   .categories{
     background-color: #EE6983;
+    height: 90rem;
+    border: 4px dotted #FFF5E4;
   }
   .categories h2{
     font-family: 'Merriweather', serif;
@@ -286,20 +288,7 @@ body{
     text-align: center;
     color: #FFF5E4;
   }
-  .btn-cus{
-    display: inline-block;
-    margin-top: 15px;
-    padding: .9rem 3.5rem;
-    background-color: #FFF5E4;
-    border-radius: 15px;
-    font-weight: 800;
-    font-size: 1.7rem;
-    color: #EE6983;
-    text-decoration: none;
-    font-size: 15px;
-    cursor: pointer;
-    vertical-align: middle;
-  }
+  
   .categories--list{
     padding-top: 4rem;
     padding-bottom: -30rem;
@@ -334,18 +323,35 @@ body{
     background-color: rgba(0, 0, 0, 0.736);
     object-fit: cover;
   }
+
   .categories--list li:nth-child(1),
   .categories--list li:nth-child(2){
-    position: relative;
+    /*position: relative;*/
     z-index: 999;
   }
+  /*
   .categories--list li:nth-child(3){
     transform: translate(19rem, -30rem);
   }
   .categories--list li:nth-child(4){
     transform: translate(19rem, -30rem);
+  }*/
+
+  .categories--list li:nth-child(3){
+    position: relative;
+    top: -500px;
+    right: -300px;
   }
-  
+  .categories--list li:nth-child(4){
+    position: relative;
+    top: -500px;
+    right: -300px;
+  }
+  .categories--list li:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.09);
+    transform: scale(1.1);
+    z-index: 9999;
+  }
   
 
   /****** Mail*******/
