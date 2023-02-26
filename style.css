@@ -8,23 +8,51 @@ html{
   outline: none;
 }
 body{
-  overflow: hidden;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /*font-family: 'Merriweather', serif;*/
+  font-family: 'Gilroy-Bold', sans-serif;
+  
   color: #372948;
   line-height: 1.6;
   background-color: #fff;
 }
+section{
+  padding: 2 rem 9%;
+}
 
+h2{
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 4rem;
+}
+h3{
+  font-size: 3rem;
+}
+.btn-primary{
+  display: inline-block;
+  margin-top: 2 rem;
+  padding: .9rem 3.5rem;
+  background-color: #EE6983;
+  border-radius: 5rem;
+  font-weight: 800;
+  font-size: 1.7 rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover{
+  background-color: #8A1C24;
+}
 .header--banner{
-  /*position: fixed;*/
+  font-family: 'Gilroy-Light', sans-serif;
   top: 0;
   left: 0;
   right: 0;
-  background: #fe2626;
+  background: #FFF5E4;
 
   /*Flex directives */
-  position: fixed;
-  padding: 30px 5%;
+  
+  padding: 15px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,18 +78,35 @@ body{
 
 .header--banner--navBar ul li {
   display: inline-block;
-  padding: 0px 100 px;
+  
 }
 .header--banner--navBar ul li a{
   /*font-size: 2 rem;*/
   transition: all 0.3s ease 0s;
-  
-  color: #fff;
+  padding: 0px 20px;
+  color: #372948;
   text-decoration: none;
 
 } 
-.header--banner--navBar ul li a :hover{
+.header--banner--navBar ul li a:hover{
+  color: #EE6983;
+}
+
+.header--banner--icons ul{
+  list-style: none;
+}
+.header--banner--icons ul li{
+  display: inline-block;
+}
+
+.header--banner--icons ul li a{
+  padding: 0px 20px;
+  text-decoration: none;
   color: #372948;
+}
+
+.header--banner--icons ul li a:hover{
+  color: #EE6983;
 }
 /****** Container *******/
 /*.container {
@@ -70,8 +115,8 @@ body{
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-}
-*/
+}*/
+
   /****** Hero *******/
   .hero{
     background-image: linear-gradient(
@@ -85,13 +130,35 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2 rem 9%;
   }
   
   .hero--flex--content{
-    padding: 6rem 0 8rem 0;
+    /*padding: 6rem 0 8rem 0;*/
+    font-family: 'Gilroy-Medium', sans-serif;
+    padding: 0px 200px;
     color: #ffffff;
+    max-width: 100rem;
     /*display: flex;*/
-    
-    
+  }
+  .hero--flex--content span{
+    font-size: 3rem;
+    color: #DD9EB5;
+    padding: 1rem 0;
+    line-height: 1.5;
+  }
+  /****** Hero Ends *******/
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
   }
