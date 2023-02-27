@@ -17,9 +17,234 @@
     <link rel="stylesheet" href="reset.css" />
 
     <!-- This is where all of our awesome CSS code goes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Font link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+
+    <!--Icons of navigation bar-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
   </head>
   <body>
+    <!--Wrapper and main flex container-->
+    <header>
+      <h2 class="sr-only">Site header</h2>
+        <div class="header--banner">
+          <!--Class image will be positioned in the middle-->
+          
+          <!--class="header--banner--nav" is the links which will be on the left side of banner-->
+          <nav class="header--banner--navBar">
+            <ul>
+              <li><a class="active" href="#">HOME</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <img width="200" class="header--banner--logo" src="images/MahouBunny_Logo.png" alt="Company logo, Mahou Bunny">
+          <div class="header--banner--icons">
+            <ul>
+              <li><a href="#"> <i class='bx bx-search-alt-2'></i> Search</a></li> 
+              <li><a href="#"> <i class='bx bxs-user'></i> Account</a></li>
+              <li><a href="#"> <i class='bx bx-shopping-bag' ></i> Basket</a></li>
+            </ul>
+          </div>
+                <!--Right side of banner is the user sign in and basket-->   
+        </div>
+    </header> 
+    <main>
+      <h1 class="sr-only">Mahou Bunny home page</h1>
+
+      <!--Hero Section-->
+      <section>
+        <h2 class="sr-only">Hero Collaboration Banner</h2>
+        <!--hero is the oversized image banner at the top of image
+        mine is an event banner-->
+        <div class="hero">
+          <div class="hero--flex--content">
+            <h2>Whimsical Collaborations</h2>
+            <span>with games, anime, manga</span>
+            <p>
+                For the third aniversary of Sinoalice, Mahou Bunny is 
+                holding a special collaboration jewlery set featuring Cinderella. 
+            </p>
+            <a class="btn-primary" href="#">Shop Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!--Popular products -->
+      <section>
+        <div class="products">
+          <div class="container">
+            <h2>Featured Products</h2>
+            <ul class="products--list">
+              <li>
+                <img src="images/Archillect_on_Twitter.png" alt="Image of Sinoalice colab ring with black leaves shoulder and rose quartz head">
+                <h4>Burned Cinder</h4>
+                <h5>$1,800.00</h5>
+              </li>
+              <li>
+                <img src="images/crystal_perfume_bottle2.png" alt="Image of crystal bottle fading blue to purple">
+                <h4>Mahou Perfume</h4>
+                <h5><s>$80.00</s>  $40.00</h5>
+              </li>
+              <li>
+                <img src="images/goldfishEarring.png" alt="Image of cubism goldfish earring">
+                <h4>Fish Cubes</h4>
+                <h5>$40.00</h5>
+              </li>
+              <li>
+                <img src="images/blueCystalRing.png" alt="Image of Zodiac collection: Pisces, ring with blue crystal">
+                <h4>Pisces Ring</h4>
+                <h5>$50.00</h5>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+
+      <!--About Us Section-->
+      <section>
+        <div class="about">
+          <div class="container">
+            <h2>About Us</h2>
+            <div class="about--flex">
+              <video class="about--flex--vid" src="images/girlDancing.mp4" loop autoplay muted></video>
+              <div class="about--flex--contents">
+                <h3><span>"</span>From Mundane to Magic."</h3>
+                <p>A small local business using crystals 
+                  to create mundane everyday objects 
+                  magical ✧</p>
+                <a href="#" class="btn-about">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Categories Section-->
+      <section>
+        <div class="categories">
+          <div class="container">
+            <h2>Categories</h2>
+            <ul class="categories--list">
+              <li>
+                <img src="images/earringPinkStar.png" alt="Image of Pink star shaped ring">
+                <div class="labels">
+                  <h4>Jewlery</h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/crystal_perfume_bottle.png" alt="Image of crystal bottle fading blue to purple">
+                <div class="labels">
+                  <h4>Mahou Perfume Collections</h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/Dice.png" alt="Image of Dichroic Glass Polyhedral Dice">
+                <div class="labels">
+                  <h4>Magical Mundane Series</h4>
+                </div>
+              </li>
+              <li>
+                <img src="images/rose-quartz-crystals-emanuela-carratoni.png" alt="Image of Rose quartx">
+                <div class="labels">
+                  <h4>Gemstone</h4>
+                </div>
+              </li>
+            </ul>
+            <!--<a href="#" class="btn-cus">Customize ✧</a>-->
+
+          </div>
+        </div>
+      </section>
+
+      <!--Newsletter Section-->
+      <section>
+        <div class="newsletter">
+          <div class="container">
+            <h2 class="sr-only">NewsLetter</h2>
+            <div class="news--flex">
+              <div class="news--flex--content">
+                <h3>Sign Up For Newsletters</h3>
+                <h4>Enjoy $20 off your first order!</h4>
+                <p>Join our newsletter for <span>exclusive offers</span>, early launch access, and more! </p>
+              </div>
+              <form>
+                <div class="form">
+                  <input type="text" id="email" name="email" placeholder="Your email address" autocomplete="email" required="required">
+                  <button class="normal" type="submit">Sign Up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!--footer-->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <h2 class="sr-only">Footer</h2>
+          <div class="footer--flex">
+            <div class="col">
+              <img class="col--logo" src="images/blackWhiteBunnyLogo.png" alt="Image of Mahou Bunny black/ white Logo">
+              <h4>Contact</h4>
+              <p><strong>Address: </strong> 123 Burned Bunny, Street 47, Ottawa</p>
+              <p><strong>Phone: </strong> +01 613.111.1111</p>
+              <p><strong>Email: </strong> support@mahoubunny.com</p>
+              <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+              <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                  <ul>
+                    <li><a href="#"> <i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="#"> <i class='bx bxl-instagram-alt'></i></a></li>
+                    <li><a href="#"> <i class='bx bxl-twitter'></i></a></li>
+                    <li><a href="#"> <i class='bx bxl-youtube'></i></a></li>
+                    <li><a href="#"> <i class='bx bxl-discord-alt'></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <h4>About</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shipping Options</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>My Account</h4>
+              <ul>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">View Cart</a></li>
+                <li><a href="#">My Wishlist</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Help</a></li>
+              </ul>
+            </div>
+            <div class="col--img">
+              <img src="images/cystalImage.jpg" alt="Filler image of a candy cystal">
+            </div>
+            <div class="copyright">
+              <p>©2023 MahouBunny</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!--
 
       YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
