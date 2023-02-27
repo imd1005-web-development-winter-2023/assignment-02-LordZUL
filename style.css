@@ -77,7 +77,18 @@ body{
   .btn-about:hover{
     background-color: #8A1C24;
   }
-
+  button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+  }
   .header--banner{
     font-family: 'Gilroy-Light', sans-serif;
     top: 0;
@@ -393,7 +404,8 @@ body{
     height: 3.125rem;
     padding: 0 1.25em;
     font-size: 14px;
-    width: 100%;
+    /*width: 100%;*/
+    width: 400px;
     border: 1px solid transparent;
     border-radius: 4px;
     outline: none;
@@ -402,18 +414,14 @@ body{
 
   }
   .form button{
-    height: 3.125rem;
-    padding: 0 1.25em;
-    font-size: 14px;
-    width: 40%;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    outline: none;
     background-color: #EE6983;
     color: #FFF5E4;
     white-space: nowrap;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+  }
+  .form button:hover{
+    background-color: #8A1C24;
   }
    /****** Footer *******/
   .footer{
