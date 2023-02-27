@@ -320,6 +320,8 @@ body{
     width:450px ;
     margin-bottom: 1rem;
     border-radius: 15px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
     background-color: rgba(0, 0, 0, 0.736);
     object-fit: cover;
   }
@@ -329,14 +331,6 @@ body{
     /*position: relative;*/
     z-index: 999;
   }
-  /*
-  .categories--list li:nth-child(3){
-    transform: translate(19rem, -30rem);
-  }
-  .categories--list li:nth-child(4){
-    transform: translate(19rem, -30rem);
-  }*/
-
   .categories--list li:nth-child(3){
     position: relative;
     top: -500px;
@@ -355,7 +349,75 @@ body{
   
 
   /****** Mail*******/
+  .newsletter{
+    background-image: url(images/newsletterBackground.jpg);
+    background-position: 20% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    
+    
+  }
+  .news--flex{
+    margin: 4rem 0rem;
+    padding: 50px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .news--flex--content{
+    border: 1px solid #FFF5E4;
+    background-color: rgba(0, 0, 0, 0.352);
+    padding: 20px;
+  }
+  .news--flex--content h3{
+    color: #372948;
+  }
+  .news--flex--content h4{
+    color: #FFF5E4;
+    padding-bottom:15px;
+  }
+  .news--flex--content p{
+    color: #372948;
+    font-weight: 300;
+  }
+  .news--flex--content span{
+    color: #EE6983;
+    font-weight: 100;
+  }
+  .form{
+    display: flex;
+    width: 40%;
 
+  }
+  .form input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+  }
+  .form button{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 40%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    background-color: #EE6983;
+    color: #FFF5E4;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
    /****** Footer *******/
 
 
