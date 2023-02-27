@@ -269,7 +269,7 @@ body{
     padding: 20px 20px;
     border: 1px solid #fff;
     border-radius: 15px;
-    background-color: #DD9EB5;
+    background-color: #EE6983;
   }
   .about--flex--contents span{
     font-size: 8rem;
@@ -285,7 +285,7 @@ body{
 
   /****** Categories *******/
   .categories{
-    background-color: #EE6983;
+    background-color: #DD9EB5;
     height: 90rem;
     border: 4px dotted #FFF5E4;
   }
