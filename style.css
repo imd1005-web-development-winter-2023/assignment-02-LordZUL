@@ -291,7 +291,6 @@ body{
   
   .categories--list{
     padding-top: 4rem;
-    padding-bottom: -30rem;
     margin-bottom: 5px;
     display: flex;
     /*justify-content: space-between;*/
@@ -356,8 +355,6 @@ body{
     background-size: cover;
     height: 40vh;
     width: 100%;
-    
-    
   }
   .news--flex{
     margin: 4rem 0rem;
@@ -419,8 +416,68 @@ body{
     border-bottom-left-radius: 0;
   }
    /****** Footer *******/
+  .footer{
+    background-color: #EE6983;
 
-
+  }
+  .footer--flex{
+    padding-top: 4rem;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+  }
+  
+  .col img{
+    width:200px;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+  .col h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+    color: #FFF5E4;
+  }
+  .col p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+  }
+  .col a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #372948;
+    margin-bottom: 10px;
+  }
+  .follow{
+    margin-top: 20px;
+  }
+  .col--img img{
+    height: 400px;
+    width:400px ;
+    object-fit: cover;
+    padding: -20px;
+  }
+  .col li{
+    list-style-type: none;
+  }
+  .icon li{
+    display: inline-block;
+  }
+  .icon li i{
+    color: #8A1C24;
+    padding-right: 4px;
+    cursor: pointer;
+  }
+  .icon li i:hover,
+  .col a:hover{
+    color: #FFF5E4;
+  }
+  .copyright{
+    width: 100%;
+    text-align: center;
+  }
   /****** SR reader *******/
   .sr-only {
     position: absolute;
