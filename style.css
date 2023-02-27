@@ -96,8 +96,6 @@ body{
     right: 0;
     background: #FFF5E4;
     z-index: 9999;
-    position: sticky;
-
     /*Flex directives */
     
     padding: 15px 5%;
